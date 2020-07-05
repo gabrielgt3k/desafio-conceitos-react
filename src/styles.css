@@ -6,11 +6,8 @@
 
 body {
   font-size: 14px;
-}
-
-div {
-  width: 100%;
-  margin: 20px;
+  background: #7159c1;
+  font-family: 'Roboto', sans-serif;
 }
 
 div li {
@@ -18,8 +15,80 @@ div li {
   align-items: center;
 }
 
-div li + li {
-  margin-top: 15px;
+.container {
+  max-width: 700px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 20px rgb(0, 0, 0, 0.1);
+  padding: 30px;
+  margin: 80px auto;
+}
+
+.container form {
+  width: 640px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+.container form input {
+  border: 1px solid #888;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 16px;
+  width: 50%;
+}
+.container form button[type=submit] {
+  justify-content: center;
+  width: 20%;
+  text-align: center;
+  background-color: #81b71a;
+}
+
+.container form input {
+  margin-top: 20px;
+}
+
+.container form input:focus {
+  outline: none;
+}
+
+hr {
+  margin-top: 24px;
+  width: 640px;
+}
+
+.container .techs {
+  word-wrap: break-word;
+  margin-bottom: 20px;
+  max-width: 50%;
+}
+
+.container .techs button {
+  justify-content: flex-end;
+  height: 50%;
+  margin-left: 50px;
+}
+
+.container .techs-list {
+  padding: 10px 10px 10px 0;
+  text-align: left;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+  margin-top: 20px;
+  border: #81b71a 3px solid;
+  border-radius: 4px;
+}
+
+.container .techs span {
+  padding: 0 10px;
+  margin: 5px 0 0 10px;
+  background-color: #7159c1;
+  color: #fff;
+  border-radius: 5px;
 }
 
 button {
@@ -28,12 +97,20 @@ button {
   border: 0;
   padding: 10px 15px;
   cursor: pointer;
-  margin-top: 15px;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+div li + li {
+  margin-top: 15px;
+}
+
+div li {
+  font-weight: bold;
 }
 
 div li button {
-  margin: 0 15px;
+  margin: 15px;
   background: #ca4949;
 }
